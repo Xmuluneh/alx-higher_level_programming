@@ -1,3 +1,1 @@
-#!/bin/bash
-Readme on the first prject on the python file
-
+Higher Level Programming and Algorithms
