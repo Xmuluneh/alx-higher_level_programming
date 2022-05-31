@@ -8,6 +8,6 @@ digit = digit if number > 0 else -digit
 if digit > 5:
     print("Last digit of {} is {} and is greater than 5".format(number, digit))
 elif digit == 0:
-    print("Last digit of {} is {} and is zero".format(number, digit))
+    print("Last digit of {} is {} and is 0".format(number, digit))
 elif digit < 6 and digit != 0:
     print("Last digit of {} is {} and is less than 6 not 0".format(number, digit))
