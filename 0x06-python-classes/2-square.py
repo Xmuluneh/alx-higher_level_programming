@@ -8,6 +8,6 @@ class Square:
         """Initialize the size variable"""
         self.__size = size
         if not isinstance(size, int):
-            raise TypeError("Size must be an integer")
+            raise TypeError("size must be an integer")
         else:
-            raise ValueError("size must be >=0")
+            raise ValueError("size must be >= 0")
