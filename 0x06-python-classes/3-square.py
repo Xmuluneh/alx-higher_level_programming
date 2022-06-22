@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""define a class based on 2-Square.py """
+
+
 class Square:
     """Represents a square.
     Private instance attribute: size.
@@ -12,7 +15,8 @@ class Square:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        else:
+            self.__size = size
 
     def area(self):
         """Returns the current square area."""
