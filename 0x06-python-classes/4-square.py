@@ -1,4 +1,4 @@
-#!/use/bin/python3
+#!/usr/bin/python3
 """The class is defined based on 3-square.py"""
 
 
