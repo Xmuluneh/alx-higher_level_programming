@@ -4,17 +4,25 @@
 
 class Square:
     def __init__(self, size=0):
-        """Initialize the size value"""
+        """Initialize the size value
+        Args:
+            size is initialized
+            """
         self.__size = size
 
     @property
     def size(self):
-        """Return the optimal value of size"""
+        """Return the optimal value of size
+        Args:
+            """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Set a new value for size if the conditions are passed. """
+        """Set a new value for size if the conditions are passed.
+         Args:
+             set a new value for size
+             """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
