@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" add_integer
-    Adds two integers
+"""  My function: add_integer
+                  Adds two integers
     Return:
          Sum of two integers
 """
