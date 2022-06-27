@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Define rectangle based on 2-rectangle.py """
+""" Define rectangle based on 4-rectangle.py """
 
 
 class Rectangle:
