@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# !/usr/bin/python3
 """ Define rectangle based on 1-rectangle.py """
 
 
