@@ -108,6 +108,6 @@ class Rectangle:
           Args:
               size the new parameter for the class
           Return :
-                the class instance size
+                A new  class instance size
         """
         return cls(size, size)
