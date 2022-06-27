@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ Rectangle class """
+
+
 class Rectangle:
-    """Reactangle calss with no attributes"""
+    """Rectangle class with no attributes"""
     pass
