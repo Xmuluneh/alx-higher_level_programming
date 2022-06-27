@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Define rectangle based on 0-rectangle.py """
+""" A rectangle class define rectangle based on 0-rectangle.py """
 
 
 class Rectangle:
