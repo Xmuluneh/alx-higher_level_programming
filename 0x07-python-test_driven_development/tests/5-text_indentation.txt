@@ -24,4 +24,11 @@ School
 >>> text_indentation()
 Traceback (most recent call last):
 TypeError: text_indentation() missing 1 required positional argument: 'text'
-
+>>> text_indentation("ALx.School?How are you:Muluneh")
+ALx.
+<BLANKLINE>
+School?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+Muluneh
