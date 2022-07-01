@@ -1,0 +1,19 @@
+A test for 5-text_indentation.
+=============================
+
+Import the function:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation(9)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation('mul.lam:root?alem')
+mul.
+<BLANKLINE>
+lam:
+<BLANKLINE>
+root?
+<BLANKLINE>
+alem
