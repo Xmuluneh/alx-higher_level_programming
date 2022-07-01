@@ -17,7 +17,7 @@ lam:
 root?
 <BLANKLINE>
 alem
->>> text_indentation('Alx.School')
+>>> text_indentation(“Holberton.School”)
 Alx.
 <BLANKLINE>
 School
