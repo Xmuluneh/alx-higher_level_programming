@@ -8,7 +8,11 @@
 
 def matrix_divided(matrix, div):
     """
-
+         Args:
+             first parameter-matrix
+             second parameter -div
+         Return :
+                 A new matrix
     """
     if not all(type(i) in [int, float] for row in matrix for i in row):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
@@ -18,5 +22,5 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    new_matrix = [[eval("{:.2f}".format(num / div)) for num in row]for row in matrix]
+    new_matrix = [[eval("{:.2f}".format(int(num / div))) for num in row]for row in matrix]
     return new_matrix

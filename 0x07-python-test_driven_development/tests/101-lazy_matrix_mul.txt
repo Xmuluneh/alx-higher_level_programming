@@ -1,0 +1,9 @@
+This is a test for the matrix_mul function
+
+
+importing functions:
+>>> lazy_matrix_mul = __import__("101-lazy_matrix_mul").lazy_matrix_mul
+>>> lazy_matrix_mul(m1, m1)
+[[30, 36, 42], [66, 81, 96], [102, 126, 150]]
+>>> lazy_matrix_mul(m3, m6)
+[[17,  20, 23,    26, 29, 32, 35], [35, 42, 49, 56, 63, 70, 77], [53, 64, 75, 86, 97, 108, 119], [71, 86, 101, 116, 131, 146, 161]]
