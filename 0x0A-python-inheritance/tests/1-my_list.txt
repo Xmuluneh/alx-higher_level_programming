@@ -55,4 +55,9 @@ Now test it:
 
 	>>> my_list.print_sorted()
 	['e', 'g', 'k', 'o', 'x']
-
+    >>> my_list = MyList()
+    >>> my_list.append(2)
+    >>> my_list
+    [2]
+    >>> my_list.print_sorted()
+    [2]
