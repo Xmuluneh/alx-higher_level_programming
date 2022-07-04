@@ -16,6 +16,4 @@ class MyInt(int):
 
     def __ne__(self, other):
         """Inequality becomes equality."""
-
         return super().__eq__(other)
-
