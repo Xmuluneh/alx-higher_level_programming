@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""3-is_kind_of_class check the instance of the object to the given call or inheres """
+"""3-is_kind_of_class check the same class or inheres """
 
 
 def is_kind_of_class(obj, a_class):
