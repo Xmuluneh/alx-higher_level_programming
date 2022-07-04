@@ -5,9 +5,9 @@ import function :
 
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", 12)
-12
+
 >>> bg.integer_validator("width", 89)
-89
+
 >>> bg.area()
 Traceback (most recent call last):
 Exception: area() is not implemented
@@ -27,7 +27,7 @@ TypeError: average must be an integer
 Traceback (most recent call last):
 TypeError: NaN must be an integer
 >>> bg.integer_validator("Big", 1000000000000)
-1000000000000
+
 >>> bg.integer_validator("age", (4,))
 Traceback (most recent call last):
 TypeError: age must be an integer
