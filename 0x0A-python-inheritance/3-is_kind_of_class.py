@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-"""3-is_kind_of_class check the same class or inheres """
+"""Module 3-is_kind_of_class.
+Finds if the object is an instance of, or if the object is an
+instance of a class that inherited from, the specified class.
+"""
 
 
 def is_kind_of_class(obj, a_class):
-    """
-    My function is_kind_of_class: check the instance of the object
+    """Finds if obj is an instance of a_class or a class
+    inherited from a_class.
     Args:
-        first parameter:obj
-        second parameter: a_class
-    Return:
-        a boolean value after check is instantiation
+        - obj: object to look at
+        - a_class: class to evaluate
+    Returns: True or False
     """
-    if isinstance(type(obj), a_class):
-        return True
-    else:
-        return False
+
+    return isinstance(obj, a_class)
