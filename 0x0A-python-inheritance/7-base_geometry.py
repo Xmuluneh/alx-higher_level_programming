@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""A class BaseGeometry based on 6-base_geometry.py"""
+"""A class BaseGeometry based on 6-base_geometry"""
 
 
 class BaseGeometry:
     def area(self):
-        """My function area : with no parameter"""
+        """My function area : raise exception"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
