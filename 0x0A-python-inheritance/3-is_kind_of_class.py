@@ -11,4 +11,7 @@ def is_kind_of_class(obj, a_class):
     Return:
         a boolean value after check is instantiation
     """
-    return True if isinstance(type(obj), a_class) else False
+    if isinstance(type(obj), a_class):
+        return True
+    else:
+        return False
