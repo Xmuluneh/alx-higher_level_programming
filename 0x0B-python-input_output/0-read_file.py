@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 0-read_file.
+"""Module 0-read_file
 Read from a file and print
 """
 
