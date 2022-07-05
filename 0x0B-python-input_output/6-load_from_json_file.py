@@ -9,8 +9,8 @@ def load_from_json_file(filename):
     """Create an Object from a filename
        Args:
            -filename:name of the file
-       Reurn:
+       Return:
              Object
     """
     with open(filename, 'r') as f:
-        j.load(f)
+        return j.load(f)
