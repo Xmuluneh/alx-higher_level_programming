@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 class Student:
-    """ Class:Student
-
-    """
+    """Module 9-student
+       Class:Student
+     """
 
     def __init__(self, first_name, last_name, age):
         """initialise the parameter list
@@ -16,8 +16,8 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """the functon to_json return the dictionary
-        representation of the clas Strident
+       """Retrieves a dictionary representation
+        of a Student instance.
+        Returns: the dict representation of the instance.
         """
-
-        return self.__dict__
+       return self.__dict__
