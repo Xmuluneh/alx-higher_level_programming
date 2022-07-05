@@ -6,7 +6,6 @@
 """
 
 
-
 def class_to_json(obj):
     """Create a dictionary description of object
        Args:
