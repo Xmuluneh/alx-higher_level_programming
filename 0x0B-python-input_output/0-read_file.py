@@ -5,12 +5,12 @@ Read from a file and print
 
 
 def read_file(filename=""):
-    """MY function read_file: read text from file and print its content on the stdout
+    """Reads from filename and prints its content to stdout
     Args:
-        first parameter: filename string
+        first parameter: filename name of the file
 
      """
-    with open(filename, encoding="utf-8") as f:
+    with open(filename) as f:
         read_text = f.read()
         print(read_text, end="")
 
