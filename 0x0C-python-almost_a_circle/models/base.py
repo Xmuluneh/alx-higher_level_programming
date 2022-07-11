@@ -6,7 +6,6 @@ import os
 import csv
 
 
-
 class Base:
     """class with private attribute
         __nb_objects
@@ -26,7 +25,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """The Json object as string representationos list_dictionaries
+        """The Json object as string representation of list_dictionaries
            Args:
                -list_dictionaries
            Return :
@@ -100,6 +99,7 @@ class Base:
                 list_instance.append(cls.create(**i))
             return list_instance
         return []
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """A  class method that serializes and
@@ -116,10 +116,11 @@ class Base:
             else:
                 csv_columns = ["id", "size", "x", "y"]
             with open(cls.__name__ + ".csv", "w") as file:
-                writer = csv.DictWriter(file, fieldnames = csv_columns)
+                writer = csv.DictWriter(file, fieldnames=csv_columns)
                 writer.writeheader()
                 for data in dict_data:
                     writer.writerow(data)
+
     @classmethod
     def load_from_file_csv(cls):
         """Loads from csv file"""
@@ -133,5 +134,3 @@ class Base:
                     list_instance.append(cls.create(**d))
             return list_instance
         return []
-
-
