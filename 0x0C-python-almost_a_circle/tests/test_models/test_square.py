@@ -6,8 +6,6 @@ Each test has the number of the task
 
 import unittest
 import io
-import sys
-import os
 import contextlib
 from models.base import Base
 from models.rectangle import Rectangle
