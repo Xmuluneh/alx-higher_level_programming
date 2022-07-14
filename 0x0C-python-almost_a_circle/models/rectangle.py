@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Module Rectangle inherited from Base"""
-from . import base
+from models.base import Base
 
 
-class Rectangle(base.Base):
+class Rectangle(Base):
     """Class Rectangle with private instance
        Inherited from Base
     """

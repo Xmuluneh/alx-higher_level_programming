@@ -2,11 +2,13 @@
 """Module Square
     inherited from Rectangle
 """
-from . import rectangle
-from . import base
+import sys
+
+from models.rectangle import Rectangle
+from models.base import Base
 
 
-class Square(rectangle.Rectangle):
+class Square(Rectangle):
     """A class Square inherited from Rectangle"""
 
     def __init__(self, size, x=0, y=0, id=None):
@@ -69,4 +71,4 @@ class Square(rectangle.Rectangle):
 
     def to_dictionary(self):
         """Return the dictionary representation of the square class"""
-        return {'id': self.id, 'x': self.x, 'size':self.size,'y':self.y}
+        return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
