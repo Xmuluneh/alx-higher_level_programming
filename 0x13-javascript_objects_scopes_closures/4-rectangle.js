@@ -1,6 +1,6 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 class Rectangle {
-  constructor (w, h) {
+  constructor(w, h) {
     if (w <= 0 || h <= 0) {
       module.exports = Rectangle;
     } else {
@@ -9,7 +9,7 @@ class Rectangle {
     }
   }
 
-  print () {
+  print() {
     let recShape = '';
     for (let i = 0; i < this.height; i++) {
       for (let k = 0; k < this.width; k++) {
@@ -22,13 +22,13 @@ class Rectangle {
     console.log(recShape);
   }
 
-  rotate () {
+  rotate() {
     const temp = this.height;
     this.height = this.width;
     this.width = temp;
   }
 
-  double () {
+  double() {
     this.height = 2 * this.height;
     this.width = 2 * this.width;
   }
