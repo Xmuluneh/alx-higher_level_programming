@@ -8,7 +8,7 @@ if (isNaN(num) || num === 0) {
   console.log(fact(num));
 }
 
-function fact(n) {
+function fact (n) {
   if (n === 1) {
     return 1;
   } else {
