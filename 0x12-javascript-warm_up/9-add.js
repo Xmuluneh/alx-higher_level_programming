@@ -6,7 +6,7 @@ if (myArrayLen === 2 || myArrayLen === 3) {
 } else {
   add(parseInt(process.argv[2]), parseInt(process.argv[3]));
 }
-function add(a, b) {
+function add (a, b) {
   const sum = a + b;
   console.log(sum);
 }
