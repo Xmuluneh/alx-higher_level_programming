@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 const argLen = process.argv.length;
 if (argLen === 3) {
   console.log('Argument found');
