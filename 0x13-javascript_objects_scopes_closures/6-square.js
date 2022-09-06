@@ -1,11 +1,11 @@
 #!/usr/bin/node
 const Rectangle = require('./5-square');
 class Square extends Rectangle {
-  constructor(size) {
+  constructor (size) {
     super(size, size);
   }
 
-  charPrint(c) {
+  charPrint (c) {
     let letPrint = '';
     if (c === undefined) {
       for (let i = 0; i < this.height; i++) {
