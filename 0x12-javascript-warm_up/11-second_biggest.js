@@ -1,21 +1,21 @@
-#!/usr/bin/node
+#!/opt/homebrew/bin/node
 const inputArray = process.argv;
 
-if (process.argv.length === 2 || process.argv.length === 3) {
+if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  const newArray = inputArray.slice(2);
+  let newArray = inputArray.slice(2);
 
   let i;
 
   for (i = 0; i < newArray.length; i++) {
-    newArray[i] = parseInt(newArray[i]);
+    for (let k = i + 1; k < newArray.length; k++) {
+      if (newArray[i] > newArray[k]) {
+        const temp = newArray[i];
+        newArray[i] = newArray[k];
+        newArray[k] = temp;
+      }
+    }
   }
-
-  const firstLargest = Math.max(...newArray);
-  const index = newArray.indexOf(firstLargest);
-
-  newArray.splice(index, 1);
-  const secondLargest = Math.max(...newArray);
-  console.log(secondLargest);
+  console.log(newArray[newArray.length - 2]);
 }
