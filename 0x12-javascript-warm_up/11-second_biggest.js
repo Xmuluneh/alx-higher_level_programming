@@ -4,7 +4,7 @@ const inputArray = process.argv;
 if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  let newArray = inputArray.slice(2);
+  const newArray = inputArray.slice(2);
 
   let i;
 
