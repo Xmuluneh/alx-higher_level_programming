@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 const inputArray = process.argv;
 
 if (process.argv.length <= 3) {
