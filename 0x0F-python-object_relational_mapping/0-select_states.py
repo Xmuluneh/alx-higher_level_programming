@@ -4,7 +4,8 @@
 import MySQLdb
 
 
-conn = MySQLdb.connect(host="localhost", port=3306, user='root', passwd="root", db='my_db', chracter="uft8")
+conn = MySQLdb.connect(host="localhost", port=3306,
+                       user='root', passwd="root", db='my_db', chracter="uft8")
 cur = conn.cursor()
 cur.excute("SELECT * FROM states ORDER BY id")
 query_rows = cur.fetchall()
