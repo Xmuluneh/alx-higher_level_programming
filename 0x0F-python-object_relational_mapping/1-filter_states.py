@@ -6,9 +6,12 @@ if __name__ == '__main__':
 
     import MySQLdb
     import sys
+    user = sys.argv[1]
+    passwd = sys.argv[2]
+    database = sys.argv[3]
 
     db = MySQLdb.connect(host='localhost', port=3306,
-                         user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+                         user="root", passwd="passwd123", db=database)
 
     cur = db.cursor()
     cur.execute("""SELECT * FROM states WHERE name
