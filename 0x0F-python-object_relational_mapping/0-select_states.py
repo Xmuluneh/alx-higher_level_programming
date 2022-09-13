@@ -5,11 +5,14 @@
 if __name__ == '__main__':
     import MySQLdb
 
-    # import sys
+    import sys
+    user = sys.argv[1]
+    passwd = sys.argv[2]
+    database = sys.argv[3]
 
     conn = MySQLdb.connect(host="localhost", port=3306,
                            user="root", passwd="passwd123",
-                           db="hbtn_0e_0_usa", charset="utf8")
+                           db=database, charset="utf8")
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     query_rows = cur.fetchall()
