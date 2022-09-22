@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Find the maximum element in the list """
+""" A module to find the maximum element in the list """
 
 
 def find_peak(list_of_integers):
