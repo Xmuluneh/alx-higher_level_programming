@@ -9,7 +9,7 @@ def find_peak(list_of_integers):
     if list_of_integers is None or list_of_integers == []:
         return None
     else:
-        num = 0
+        num = list_of_integers[0]
         for i in list_of_integers:
             if i > num:
                 num = i
