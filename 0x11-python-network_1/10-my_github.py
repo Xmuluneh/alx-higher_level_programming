@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""Takes in Github credentials (username and password) and uses the Github API
-to display an id
-"""
-if __name__ == '__main__':
-    import requests
+"""Takes in a URL, sends a request to the URL and displays the value of the
+X-Request-Id variable found in the header of the response"""
+
+
+if __name__ == "__main__":
+    import urllib.request
     import sys
-    rul = requests.get('https://api.github.com/user',
-                       auth=(sys.argv[1], sys.argv[2]))
-    if rul.status_code >= 400:
-        print('None')
-    else:
-        print(rul.json().get('id'))
+
+    with urllib.request.urlopen(sys.argv[1]) as response:
+        head = response.headers.get('X-Request-Id')
+        print(head)
