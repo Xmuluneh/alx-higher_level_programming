@@ -9,6 +9,6 @@ if __name__ == '__main__':
     if rul.status_code >= 400:
         print('None')
     else:
-        for commit in rul.json()[10]:
+        for commit in rul.json()[:10]:
             print('{}: {}'.fomat(commit.get('sha'), commit.get('commit').
                                  get('author').get('name')))
