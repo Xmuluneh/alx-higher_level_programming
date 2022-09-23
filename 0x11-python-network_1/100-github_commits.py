@@ -4,6 +4,7 @@
 if __name__ == '__main__':
     import requests as r
     import sys
+
     rul = r.get('https:api.github.com/repos/{}/{}/commits'.
                 format(sys.argv[2], sys.argv[1]))
     if rul.status_code >= 400:
@@ -11,4 +12,4 @@ if __name__ == '__main__':
     else:
         for commit in rul.json()[:10]:
             print('{}: {}'.format(commit.get('sha'), commit.get('commit').
-                                 get('author').get('name')))
+                                  get('author').get('name')))
