@@ -7,3 +7,4 @@ if __name__ == '__main__':
     import requests as r
     import sys
     rul = r.post(sys.argv[1], date={'email': sys.argv[2]})
+    print(rul.txt)
