@@ -10,5 +10,5 @@ if __name__ == '__main__':
         print('None')
     else:
         for commit in rul.json()[:10]:
-            print('{}: {}'.fomat(commit.get('sha'), commit.get('commit').
+            print('{}: {}'.format(commit.get('sha'), commit.get('commit').
                                  get('author').get('name')))
