@@ -1,20 +1,20 @@
 #!/usr/bin/node
-
 const request = require('request');
-
+const id = Number(process.argv[2]);
 request(
-  'http://swapi.co/api/films/' + process.argv[2],
+  `https://swapi-api.hbtn.io/api/films/${id}`,
   function (error, response, body) {
     if (error) {
-      console.error(error);
+      return;
     }
-    JSON.parse(body).characters.forEach(function (url, callback) {
-      request(url, function (error, response, body) {
+    const characters = JSON.parse(body).characters;
+    for (const chx of characters) {
+      request(chx, function (error, response, body) {
         if (error) {
-          console.error(error);
+          return;
         }
         console.log(JSON.parse(body).name);
       });
-    });
+    }
   }
 );
